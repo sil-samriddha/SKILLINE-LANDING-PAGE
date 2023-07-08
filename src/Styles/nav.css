@@ -1,0 +1,170 @@
+nav * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+nav {
+  background: #fff2e1;
+  padding: 10px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #113c49;
+  text-decoration: none;
+  transition: 0.4s;
+}
+a:hover {
+  color: #F48C06;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 10px 5px;
+}
+
+.toggle a {
+  font-size: 20px;
+}
+
+.polygon {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    height: 42px;
+    width: 42px;
+    background-color: #65DAFF;
+    transform: rotate(-45deg);
+    border-radius: 30%;
+    mix-blend-mode: multiply;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+.toggle {
+  cursor: pointer;
+}
+.bars {
+  background: #113c49;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background 0.4s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #113c49;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.4s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+  
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button a {
+    padding: 7.5px 25px;
+    background: white;
+    color: gray;
+    border-radius: 50em;
+  }
+  .button.secondary a {
+    background: #F48C06;
+    color: white;
+  }
+  .button a:hover {
+    background: #113c49;
+    color: white;
+  }
+  .button a:active {
+    opacity: 0.5;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .polygon {
+    left: 3rem;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    padding: 10px 20px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+}

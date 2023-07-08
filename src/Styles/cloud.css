@@ -1,0 +1,213 @@
+.cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+}
+.cloud h2 {
+    font-size: 2rem;
+    color: #2F327D;
+}
+.cloud p {
+    font-size: 1rem;
+    width: 60%;
+    text-align: center;
+}
+.cloud-elements {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.cloud-elements img {
+    position: absolute;
+    width: 35%;
+    top: -60px;
+}
+.cloud-elements > div {
+    width: 25%;
+    padding: 2%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #CFCFDE;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.cloud-elements h3 {
+    color: #2F327D;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.cloud-elements p {
+    width: 100%;
+}
+
+.cloud-elements > div:hover {
+    box-shadow: 0px 0px 10px #2F327D;
+}
+
+.cloud-elements2 {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+.cloud-elements2 > div {
+    width: 40%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #CFCFDE;
+}
+.cloud-elements2 > div > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(23, 27, 65, 0.50);;
+}
+
+.cloud-elements2 h3{
+    color: white;
+    font-size: 2rem;
+}
+
+.cloud-elements2 button {
+    background-color: transparent;
+    outline: 0;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.cloud-elements2 button:hover{
+    background-color: rgba(35, 189, 238, 0.90);
+}
+button:active {
+    opacity: 0.5;
+}
+
+.cloud-box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 20px;
+}
+
+.cloud-box-text{
+    position: relative;
+    padding: 20px;
+}
+.cloud-box p{
+    width: 100%;
+    text-align: left;
+}
+
+.cloud-circle1, .cloud-circle2{
+    border-radius: 50%;
+    background-color: #F48C06;
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+
+.cloud-circle1 {
+    height: 3em;
+    width: 3em;
+    top: 47px;
+    left: -3px;
+}
+.cloud-circle2 {
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 300px;
+    right: 100px;
+}
+.cloud-square1, .cloud-square2{
+    border-radius: 20px;
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    z-index: -1;
+}
+
+.cloud-square1{
+    background-color: rgb(35, 189, 238);
+    top: 0;
+    left: 0;
+}
+.cloud-square2{
+    background-color: #F48C06;
+    bottom: 0;
+    right: 0;
+}
+.cloud-box-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cloud-play{
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+#cloud-play:hover{
+    transform: scale(1.2) translateY(20px);
+    transition: 0.4s;
+}
+#cloud-box-main {
+    width: 90%;
+    height: 90%;
+}
+@media screen and (max-width: 768px) {
+    .cloud {
+        text-align: center;
+    }
+    .cloud p {
+        width: 100%;
+    }
+    .cloud-elements{
+        flex-direction: column;
+    }
+    .cloud-elements > div{
+        width: 100%;
+        padding: 10% 2%;
+    }
+    .cloud-elements p {
+        width: 100%;
+    }
+    .cloud-elements2 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cloud-elements2 > div {
+        width: 100%;
+        height: 200px;
+        margin: 20px 0px;
+    }
+    .cloud-box{
+        width: 100%;
+        grid-template-columns: auto;
+    }
+    .cloud-circle1 {
+        top: 47px;
+        left: 30px;
+    }
+    .cloud-circle2 {
+        top: 330px;
+        right: 100px;
+    }
+
+    
+}

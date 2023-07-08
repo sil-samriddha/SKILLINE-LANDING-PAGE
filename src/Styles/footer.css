@@ -1,0 +1,111 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px 2% 0% 2%;
+    background-color: #252641;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer h4 {
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+}
+
+.footer-icon {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+.footer-icon > div {
+    position: relative;
+    padding: 2%;
+    border-right: 1px solid white;
+}
+.footer-icon > h4 {
+    padding: 0px 10px;
+}
+.footer-square {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid #26C1F2;
+    transform: rotate(45deg);
+    border-radius: 20%;
+    top: 30px;
+    left: -7px;
+    mix-blend-mode: color-dodge;
+}
+.footer-icon h1:hover {
+    transition: 0.4s;
+    color: #26C1F2;
+    cursor: pointer;
+}
+
+.news-letter > div {
+    display: flex;
+}
+
+.news-letter input {
+    width: 85%;
+    padding: 0.5rem;
+    margin: 0rem 0.5rem;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: 0;
+    border: 0.5px solid white;
+    color: white;
+    transition: 0.4s;
+}
+.news-letter input:focus{
+    border-color: #393FCF;
+}
+.news-letter button {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background:  linear-gradient(157deg, #545AE7 0%, #393FCF 100%);
+    color: white;
+    outline: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.news-letter button:hover{
+    color: #393FCF;
+    background: white;
+}
+.news-letter h4 , .footer-foot h4{
+    text-align: center;
+}
+
+.footer-foot {
+    padding-top: 25px;
+}
+
+.footer-foot div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+}
+.footer-foot a {
+    color: white;
+    padding: 0px 10px;
+    border-right: 0.5px solid white;
+}
+.footer-foot a:hover {
+    color: #26C1F2;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-foot div {
+        width: 100%;
+    }
+    .footer-foot a{
+        padding: 0px 5px;
+    }
+    
+}
