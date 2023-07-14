@@ -30,19 +30,19 @@
 #hero-main{
     width: 70%;
 }
-#hero-1{
+#hero-3{
     position: absolute;
     top: 50%;
     left: 60%;
     width: 15rem;
 }
-#hero-2{
+#hero-1{
     position: absolute;
     top: 10%;
     left: 60%;
     width: 7rem;
 }
-#hero-3{
+#hero-2{
     position: absolute;
     top: 40%;
     left: 10%;
