@@ -160,6 +160,7 @@
         grid-template-columns: auto;
     }
     .extras-img {
+        margin-top: 30px;
         height: 30vh;
     }
     #extras-2-1{
@@ -170,6 +171,14 @@
         left: 15%;
         top: 50%;
         width: 80%;
+    }
+    .feature h1 {
+        text-align: center;
+    }
+    .feature-elements-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

@@ -161,6 +161,7 @@ button:active {
     position: absolute;
     cursor: pointer;
     transform: translateY(20px);
+    user-select: none;
 }
 #cloud-play:hover{
     transform: scale(1.2) translateY(20px);
