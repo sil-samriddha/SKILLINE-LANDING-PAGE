@@ -1,5 +1,6 @@
 .hero{
     display: grid;
+    min-height: 80vh;
     grid-template-columns: 50% 50%;
     font-family: 'Poppins', sans-serif;
     padding: 0rem 4rem;
